@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   philo.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stephan <stephan@student.42.fr>            +#+  +:+       +#+        */
+/*   By: stliu <stliu@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 14:51:20 by stephan           #+#    #+#             */
-/*   Updated: 2025/07/22 15:52:59 by stephan          ###   ########.fr       */
+/*   Updated: 2025/07/25 15:07:34 by stliu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ typedef struct s_data
 	pthread_mutex_t	*forks;
 	pthread_mutex_t	lock;
 	pthread_mutex_t	death_lock;
+	pthread_mutex_t	data_mutex;
 	t_philo			*philos;
 }	t_data;
 
